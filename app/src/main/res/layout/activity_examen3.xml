@@ -28,9 +28,9 @@
             style="@style/CardView.Dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registro"
-            android:layout_marginTop="60dp"
-            android:textSize="50dp"
+            android:text="Selecciona tu pizza: "
+            android:layout_marginTop="20dp"
+            android:textSize="40dp"
             android:fontFamily="sans-serif-black"/>
 
 
@@ -39,55 +39,69 @@
             style="@style/CardView.Dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre de la mascota:"
-            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="Méxicana:"
+            android:layout_marginTop="10dp"
             android:textSize="20dp" />
 
-        <EditText
+        <ImageView
             android:id="@+id/pregunta1"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_marginTop="0dp"
+            android:src="@mipmap/mexicana"
+            android:text="$100" />
+
 
         <TextView
             android:id="@+id/raza"
             style="@style/CardView.Dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Raza a la que pertenece:"
+            android:layout_gravity="center"
+            android:text="Hawaiana:"
             android:textSize="20dp" />
 
-        <EditText
+        <ImageView
             android:id="@+id/pregunta2"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:layout_marginTop="0dp"
+            android:src="@mipmap/hawaiana"
+            android:text="$100" />
 
         <TextView
             android:id="@+id/edad"
             style="@style/CardView.Dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Edad:"
+            android:text="Peperoni:"
+            android:layout_gravity="center"
             android:textSize="20dp" />
 
-        <EditText
+        <ImageView
             android:id="@+id/pregunta3"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="0dp"
+            android:src="@mipmap/peperoni"
+            android:text="$100" />
+
     </LinearLayout>
 
     <Button
         android:id="@+id/Continuar"
         android:layout_width="match_parent"
-        android:layout_height="79dp"
-        android:layout_marginTop="460dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="430dp"
         android:backgroundTint="@android:color/background_dark"
         android:text="Continuar" />
 
     <Button
         android:id="@+id/regresar"
         android:layout_width="match_parent"
-        android:layout_height="79dp"
-        android:layout_marginTop="550dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="480dp"
         android:backgroundTint="@android:color/background_dark"
         android:text="Regresar" />
 

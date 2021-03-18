@@ -9,11 +9,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class examen3 extends AppCompatActivity {
 
     Button continuar, regresar;
-    EditText pregunta1, pregunta2, pregunta3;
+    ImageView pregunta1, pregunta2, pregunta3;
     SharedPreferences preferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +22,9 @@ public class examen3 extends AppCompatActivity {
         setContentView(R.layout.activity_examen3);
         continuar = (Button) findViewById(R.id.Continuar);
         regresar = (Button) findViewById(R.id.regresar);
-        pregunta1= (EditText)findViewById(R.id.pregunta1);
-        pregunta2= (EditText)findViewById(R.id.pregunta2);
-        pregunta3= (EditText)findViewById(R.id.pregunta3);
+        pregunta1= (ImageView) findViewById(R.id.pregunta1);
+        pregunta2= (ImageView) findViewById(R.id.pregunta2);
+        pregunta3= (ImageView) findViewById(R.id.pregunta3);
 
         continuar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +39,7 @@ public class examen3 extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), examen4.class);
+                Intent i = new Intent(getApplicationContext(), examen2.class);
                 startActivity(i);
             }
         });

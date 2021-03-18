@@ -8,10 +8,12 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class examen2 extends AppCompatActivity {
-    Button anterior, baño, corte;
+    Button anterior;
+    ImageView corte, baño;
     TextView nombreuser;
     SharedPreferences preferences;
 
@@ -20,8 +22,8 @@ public class examen2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_examen2);
         anterior = (Button) findViewById(R.id.anterior);
-        baño = (Button) findViewById(R.id.baño);
-        corte = (Button) findViewById(R.id.Corte);
+        baño = (ImageView) findViewById(R.id.baño);
+        corte = (ImageView) findViewById(R.id.Corte);
         nombreuser = (TextView) findViewById(R.id.nombre);
         leercredenciales();
         baño.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +56,7 @@ public class examen2 extends AppCompatActivity {
 
     private void leercredenciales() {
         preferences = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
-        nombreuser.setText("Bienvenido a CATDOG : " + preferences.getString("user", ""));
+        nombreuser.setText("Hola estimado: " + preferences.getString("user", "") + "¿qué te podemos llevar hasta tu casa este día? Por favor selecciona:" );
     }
 
 
