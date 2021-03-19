@@ -39,7 +39,7 @@ public class examen3 extends AppCompatActivity {
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), examen2.class);
+                Intent i = new Intent(getApplicationContext(), examen5.class);
                 startActivity(i);
             }
         });

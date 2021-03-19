@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Examenparcial2">
-        <activity android:name=".examen4"></activity>
+        <activity android:name=".examen5"></activity>
+        <activity android:name=".examen4" />
         <activity android:name=".examen3" />
         <activity android:name=".examen2" />
         <activity android:name=".MainActivity">
