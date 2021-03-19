@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class examen2 extends AppCompatActivity {
     Button anterior;
-    ImageView corte, baño;
+    ImageView refresco, rebanada;
     TextView nombreuser;
     SharedPreferences preferences;
 
@@ -22,25 +22,23 @@ public class examen2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_examen2);
         anterior = (Button) findViewById(R.id.anterior);
-        baño = (ImageView) findViewById(R.id.baño);
-        corte = (ImageView) findViewById(R.id.Corte);
+        rebanada = (ImageView) findViewById(R.id.rebanada);
+        refresco = (ImageView) findViewById(R.id.refresco);
         nombreuser = (TextView) findViewById(R.id.nombre);
         leercredenciales();
-        baño.setOnClickListener(new View.OnClickListener() {
+        refresco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), examen3.class);
+                Intent i = new Intent(getApplicationContext(), pantallafinal.class);
                 startActivity(i);
-                GuardarCredenciales("Baño");
 
             }
         });
 
-        corte.setOnClickListener(new View.OnClickListener() {
+        rebanada.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), examen3.class);
-                GuardarCredenciales("Corte");
                 startActivity(i);
             }
         });
@@ -56,17 +54,8 @@ public class examen2 extends AppCompatActivity {
 
     private void leercredenciales() {
         preferences = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
-        nombreuser.setText("Hola estimado: " + preferences.getString("user", "") + "¿qué te podemos llevar hasta tu casa este día? Por favor selecciona:" );
+        nombreuser.setText("Hola estimado: " + preferences.getString("user", "") + "¿qué te podemos llevar hasta tu casa este día? Por favor selecciona:");
     }
 
-
-    private void GuardarCredenciales(String boton1) {
-        preferences= getSharedPreferences( "credenciales", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor= preferences.edit();
-        editor.putString("baño", boton1);
-        editor.putString("corte", boton1);
-        editor.commit();
-
-    }
 
 }

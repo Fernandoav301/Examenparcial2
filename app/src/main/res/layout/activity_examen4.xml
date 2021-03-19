@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".examen4"
-    android:background="@color/purple_200"
+    android:background="@mipmap/fondo6"
     android:padding="20dp">
 
 
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:backgroundTint="@android:color/background_dark"
-            android:text="Finalizar" />
+            android:text="Enviar Pedido" />
 
     </LinearLayout>
 

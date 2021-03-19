@@ -35,7 +35,7 @@
         <TextView
             android:id="@+id/pizza"
             android:layout_marginTop="30dp"
-            android:text="Pizza costo: $100.00 pesos"
+            android:text="Pizza"
             android:layout_gravity="center"
             style="@style/CardView"
             android:fontFamily="sans-serif-smallcaps"
@@ -45,7 +45,7 @@
 
 
         <ImageView
-            android:id="@+id/baño"
+            android:id="@+id/rebanada"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_marginTop="0dp"
@@ -55,7 +55,7 @@
         <TextView
             android:id="@+id/baso"
             android:layout_marginTop="10dp"
-            android:text="Refrescos costo: $20.00 pesos"
+            android:text="Refrescos"
             android:layout_gravity="center"
             style="@style/CardView"
             android:fontFamily="sans-serif-smallcaps"
@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"/>
 
         <ImageView
-            android:id="@+id/Corte"
+            android:id="@+id/refresco"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_marginTop="0dp"

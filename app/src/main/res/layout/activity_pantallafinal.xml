@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pantallafinal">
+    tools:context=".pantallafinal"
+    android:padding="20dp"
+    android:background="@mipmap/fondo6">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/saludo2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/CardView.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tu bebida: "
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="35dp"
+            android:fontFamily="sans-serif-black"/>
+
+
+        <TextView
+            android:id="@+id/coca"
+            style="@style/CardView.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Coca cola costo: $20.00 pesos"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/pregunta4"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="0dp"
+            android:src="@mipmap/coca"
+            android:text="$100" />
+
+
+        <TextView
+            android:id="@+id/fanta"
+            style="@style/CardView.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Fanta costo: $15.00 pesos"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/pregunta5"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="0dp"
+            android:src="@mipmap/fanta"
+            android:text="$100" />
+
+        <TextView
+            android:id="@+id/pepsi"
+            style="@style/CardView.Dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pepsi costo: $18.00 pesos"
+            android:layout_gravity="center"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/pregunta6"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="0dp"
+            android:src="@mipmap/pepsi"
+            android:text="$100" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finalizar2"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="570dp"
+        android:backgroundTint="@android:color/background_dark"
+        android:text="Finalizar Pedido" />
+
+    <Button
+        android:id="@+id/pizzas"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="620dp"
+        android:backgroundTint="@android:color/background_dark"
+        android:text="Pizzas" />
+
+
+
+</RelativeLayout>

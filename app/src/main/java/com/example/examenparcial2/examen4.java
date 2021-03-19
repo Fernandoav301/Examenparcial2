@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class examen4 extends AppCompatActivity {
     Button Finalizar;
@@ -27,7 +28,7 @@ public class examen4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i= new Intent(getApplicationContext(),MainActivity.class);
-                // i.putExtra("json", "Los datos son"+name);
+                Toast.makeText(getApplicationContext(), "Gracias por utilizar la app de vitoLuigini su pedido fue recibido en breve se enviará", Toast.LENGTH_LONG).show();
                 startActivity(i);
             }
         });
@@ -36,6 +37,6 @@ public class examen4 extends AppCompatActivity {
 
     private void leercredenciales() {
         preferences=getSharedPreferences( "credenciales", Context.MODE_PRIVATE);
-        informacion.setText("Estimado: " +preferences.getString("user", "")+" se ha confirmado la solicitud para tu mascota: " +preferences.getString( "pregunta1"," ")+" de la raza: "+preferences.getString( "pregunta2"," ")+" y de edad: "+preferences.getString( "pregunta3"," ")+" a la cual le realizaremos un: "+preferences.getString( "baño"," "));
+        informacion.setText("Estimado: " +preferences.getString("user", "")+" has seleccionado la pizza: " +preferences.getString( "pedido1"," ")+" acompañada de la bebida: " +preferences.getString( "pedido2"," ")+" debera pagar por su pizza: " +preferences.getString( "total"," ")+" y por su bebida: " +preferences.getString( "total2"," "));
     }
 }

@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:text="USER: "
                 style="@style/CardView.Dark"
-                android:textSize="15dp" />
+                android:textSize="20dp" />
 
             <EditText
                 android:id="@+id/edit_user"
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:text="PASS: "
                 style="@style/CardView.Dark"
-                android:textSize="15dp" />
+                android:textSize="20dp" />
 
             <EditText
                 android:id="@+id/edit_pass"
