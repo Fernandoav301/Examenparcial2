@@ -15,8 +15,8 @@ public class examen2 extends AppCompatActivity {
     Button anterior;
     ImageView refresco, rebanada;
     TextView nombreuser;
+    String user;
     SharedPreferences preferences;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +25,9 @@ public class examen2 extends AppCompatActivity {
         rebanada = (ImageView) findViewById(R.id.rebanada);
         refresco = (ImageView) findViewById(R.id.refresco);
         nombreuser = (TextView) findViewById(R.id.nombre);
-        leercredenciales();
+        nombreuser.setText("Hola estimado: " + user + "¿qué te podemos llevar hasta tu casa este día? Por favor selecciona:");
+
+
         refresco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,9 +54,9 @@ public class examen2 extends AppCompatActivity {
         });
     }
 
-    private void leercredenciales() {
+    private void LeerDatos() {
         preferences = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
-        nombreuser.setText("Hola estimado: " + preferences.getString("user", "") + "¿qué te podemos llevar hasta tu casa este día? Por favor selecciona:");
+        user=preferences.getString("user","");
     }
 
 

@@ -30,7 +30,6 @@ public class pantallafinal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 GuardarCredenciales("Coca cola");
-                GuardarCredenciales2("$20.00 pesos");
 
 
             }
@@ -40,7 +39,6 @@ public class pantallafinal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 GuardarCredenciales("Fanta");
-                GuardarCredenciales2("$15.00 pesos");
 
 
             }
@@ -50,7 +48,6 @@ public class pantallafinal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 GuardarCredenciales("Pepsi");
-                GuardarCredenciales2("$18.00 pesos");
 
 
             }
@@ -76,21 +73,12 @@ public class pantallafinal extends AppCompatActivity {
 
 
     private void GuardarCredenciales(String boton2) {
-        preferences= getSharedPreferences( "credenciales", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor= preferences.edit();
+        preferences = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
         editor.putString("pedido2", boton2);
         editor.commit();
 
     }
 
-
-
-    private void GuardarCredenciales2(String total) {
-        preferences= getSharedPreferences( "credenciales", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor= preferences.edit();
-        editor.putString("total2", total);
-        editor.commit();
-
-    }
-
 }
+

@@ -50,7 +50,7 @@
             android:layout_height="140dp"
             android:layout_marginTop="0dp"
             android:src="@mipmap/coca"
-            android:text="$100" />
+            />
 
 
         <TextView
@@ -59,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Fanta costo: $15.00 pesos"
+            android:text="Fanta costo: $20.00 pesos"
             android:textSize="20dp" />
 
         <ImageView
@@ -68,14 +68,14 @@
             android:layout_height="130dp"
             android:layout_marginTop="0dp"
             android:src="@mipmap/fanta"
-            android:text="$100" />
+             />
 
         <TextView
             android:id="@+id/pepsi"
             style="@style/CardView.Dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pepsi costo: $18.00 pesos"
+            android:text="Pepsi costo: $20.00 pesos"
             android:layout_gravity="center"
             android:textSize="20dp" />
 

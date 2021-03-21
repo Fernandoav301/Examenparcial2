@@ -12,41 +12,30 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button iniciar, salir;
-    EditText user, pass;
+    Button iniciar;
+    EditText user;
     SharedPreferences preferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iniciar = (Button)findViewById(R.id.iniciar);
-        salir= (Button)findViewById(R.id.salir);
         user= (EditText)findViewById(R.id.edit_user);
-        pass= (EditText)findViewById(R.id.edit_pass);
-        salir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i= new Intent(getApplicationContext(),examen2.class);
-
-                startActivity(i);
-            }
-        });
         iniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i= new Intent(getApplicationContext(),examen2.class);
-                GuardarCredenciales(user.getText().toString(),pass.getText().toString());
+                GuardarCredenciales(user.getText().toString());
                 startActivity(i);
 
 
             }
         });
     }
-    private void GuardarCredenciales(String nombre, String password) {
+    private void GuardarCredenciales(String nombre) {
         preferences= getSharedPreferences( "credenciales", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor= preferences.edit();
         editor.putString("user", nombre);
-        editor.putString("pass", password);
         editor.commit();
 
     }

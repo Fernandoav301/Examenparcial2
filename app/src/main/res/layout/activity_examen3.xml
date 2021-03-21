@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Méxicana costo: $130.00 pesos"
+            android:text="Méxicana costo: $100.00 pesos"
             android:layout_marginTop="10dp"
             android:textSize="22dp" />
 
@@ -59,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Hawaiana costo: $95.00 pesos"
+            android:text="Hawaiana costo: $100.00 pesos"
             android:textSize="22dp" />
 
         <ImageView
@@ -74,7 +74,7 @@
             style="@style/CardView.Dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Peperoni costo: $115.00 pesos"
+            android:text="Peperoni costo: $100.00 pesos"
             android:layout_gravity="center"
             android:textSize="22dp" />
 
