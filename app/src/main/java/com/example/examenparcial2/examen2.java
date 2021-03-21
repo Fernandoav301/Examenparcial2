@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class examen2 extends AppCompatActivity {
     Button anterior;
     ImageView refresco, rebanada;
-    TextView nombreuser;
+    TextView nombre;
     String user;
     SharedPreferences preferences;
     @Override
@@ -24,9 +24,9 @@ public class examen2 extends AppCompatActivity {
         anterior = (Button) findViewById(R.id.anterior);
         rebanada = (ImageView) findViewById(R.id.rebanada);
         refresco = (ImageView) findViewById(R.id.refresco);
-        nombreuser = (TextView) findViewById(R.id.nombre);
-        nombreuser.setText("Hola estimado: " + user + "¿qué te podemos llevar hasta tu casa este día? Por favor selecciona:");
-
+        nombre = (TextView) findViewById(R.id.nombre);
+        LeerCredenciales();
+        nombre.setText("Hola estimado: " +user+ "¿qué te podemos llevar hasta tu casa este día? Por favor selecciona:");
 
         refresco.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,9 +54,9 @@ public class examen2 extends AppCompatActivity {
         });
     }
 
-    private void LeerDatos() {
+    private void LeerCredenciales() {
         preferences = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
-        user=preferences.getString("user","");
+        user = preferences.getString("user","");
     }
 
 

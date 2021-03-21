@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".examen2"
-    android:background="@mipmap/fondo6"
+    android:background="@mipmap/azul"
     android:padding="20dp">
 
 

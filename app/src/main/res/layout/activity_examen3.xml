@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".examen3"
     android:padding="20dp"
-    android:background="@mipmap/fondo6">
+    android:background="@mipmap/azul">
 
 
     <LinearLayout
